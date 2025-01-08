@@ -8,10 +8,10 @@ var adUnits = [
       },
     },
     bids: [
-      { bidder: "appnexus", params: { placementId: "13144370" } },
+      { bidder: "appnexus", params: { placementId: 13144370 } },
       {
         bidder: "rubicon",
-        params: { accountId: "7780", siteId: "87184", zoneId: "413290" },
+        params: { accountId: 14062, siteId: 70608, zoneId: 498816 },
       },
     ],
     labels: ["desktop", "mobile"],

@@ -35,16 +35,17 @@ pbjs.que.push(function () {
       });
     },
   });
+
   //Enabling google analytics for tracking
   pbjs.enableAnalytics([
     {
-      provider: "ga",
+      provider: "ga" ? "ga" : "",
       options: {
         sampling: 0.1,
         cpmDistribution: function (cpm) {
           return cpm <= 1 ? "<= 1$" : "> 1$";
         },
-        global: "ga", // Reference to the GA tracking function
+        global: "ga" ? "ga" : "", // Reference to the GA tracking function
         enableDistribution: true, // Enables latency tracking
       },
     },
