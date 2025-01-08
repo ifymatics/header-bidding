@@ -5,6 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Header Bidding</title>
     <link rel="stylesheet" href="styles/styles.css" type="styles/text" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-K43FNNX0BL"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-K43FNNX0BL");
+    </script>
 
     <script
       async
@@ -24,20 +38,6 @@
     <script src="src/fallback-ads.js" defer></script>
   </head>
   <body>
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-K43FNNX0BL"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-K43FNNX0BL");
-    </script>
     <div id="ad-container">
       <div id="div-ad-banner" class="ad-slot"></div>
     </div>

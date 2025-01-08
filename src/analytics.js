@@ -20,7 +20,7 @@ pbjs.onEvent("bidResponse", function (bid) {
   console.log("Tracked Bid Data:", bidData);
 
   // Send analytics for bids
-  ga("send", "event", "Prebid.js", "Bid Response", {
+  gtag("send", "event", "Prebid.js", "Bid Response", {
     dimension1: bidData.bidder, // Custom dimension for bidder
     dimension2: bidData.adUnitCode, // Custom dimension for ad unit
     metric1: bidData.cpm, // Custom metric for CPM
@@ -50,7 +50,7 @@ pbjs.onEvent("bidWon", function (bid) {
   console.log("Tracked Winning Bid Data:", winData);
 
   // Send analytics for winning bids
-  ga("send", "event", "Prebid.js", "Bid Won", {
+  gtag("send", "event", "Prebid.js", "Bid Won", {
     dimension1: winData.bidder, // Custom dimension for bidder
     dimension2: winData.adUnitCode, // Custom dimension for ad unit
     metric1: winData.cpm, // Custom metric for CPM
@@ -74,7 +74,7 @@ pbjs.onEvent("auctionEnd", function (auction) {
     console.log("Tracked Latency Data:", latencyData);
 
     // Send analytics for bid latency
-    ga("send", "event", "Prebid.js", "Bid Latency", {
+    gtag("send", "event", "Prebid.js", "Bid Latency", {
       dimension1: latencyData.bidder, // Custom dimension for bidder
       dimension2: latencyData.adUnitCode, // Custom dimension for ad unit
       metric1: latencyData.latency, // Custom metric for latency
