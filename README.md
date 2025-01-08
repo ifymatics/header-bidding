@@ -38,3 +38,8 @@ To start the development server, run :
 npm start
 
 This command will start a live server, and the application will be accessible in your default web browser at http://127.0.0.1:8080 (or another port if 8080 is already in use).
+
+### Running the application with github pages
+
+The application is deployed to github pages. You can access it using the following link:
+https://ifymatics.github.io/header-bidding/?pbjs_debug=true
