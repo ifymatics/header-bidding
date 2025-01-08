@@ -38,3 +38,11 @@ To start the development server, run :
 npm start
 
 This command will start a live server, and the application will be accessible in your default web browser at http://127.0.0.1:8080 (or another port if 8080 is already in use).
+
+### CI/CD Workflow
+
+This project includes a GitHub Actions workflow for continuous integration and deployment:
+
+Continuous Integration: Ensures dependencies are installed and the project is built successfully.
+
+Continuous Deployment: Automatically deploys the application to GitHub Pages whenever changes are pushed to the main branch.
